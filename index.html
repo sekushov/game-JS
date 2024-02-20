@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+	<title>Игра Аркада</title>
+</head>
+<body>
+	<div id="canvas" oncontextmenu = "return false;" style="
+	background-color: white;
+	">
+		<!-- <div id="background-canvas">
+
+		</div>
+		<div id="final-timer-canvas">
+			<p id="final-timer-text" style="
+				position: absolute;
+				font-family: 'Bungee Spice', cursive;
+				font-size: 100pt;
+				text-align: center;
+				width: 100%;
+			"></p>
+		</div>
+		<img src="assets/refresh.png" id="restartBtn" style="
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			top: 20px;
+			right: 80px;
+		" />	
+		<img src="fullscreen.png" id="fsBtn" style="
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+		" />
+		<div id="img-block" style="
+			width: 96px;
+			height: 96px;
+			overflow: hidden;
+			position: absolute;
+			left: 0px;
+			bottom: 64px;
+		">
+			<img id="hero-img" style="
+				width: 576px;
+				height: 384px;
+				position: relative;
+				top: 0px;
+				left: -96px;
+				transform: scale(-1,1);
+			" src="hero-sprite.png" />
+		</div>
+		<div id="jump-block" style="
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 144px;
+			height: 144px;
+			overflow: hidden;
+			opacity: 0.5;
+		">
+			<img src="hero-sprite.png" style="
+				position: absolute;
+				top: -144px;
+				left: -144px;
+				width: 864px;
+				height: 576px;
+				transform: scale(-1,1);
+			" />
+			<div style="
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 140px;
+				height: 140px;
+				border: 2px solid rgb(0, 119, 255);
+				border-radius: 50%;
+			"			
+			></div>
+		</div>
+		<div id="hit-block" style="
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 144px;
+			height: 144px;
+			overflow: hidden;
+			opacity: 0.5;
+		">
+			<img src="hero-sprite.png" style="
+				position: absolute;
+				top: -452px;
+				left: -442px;
+				width: 864px;
+				height: 576px;
+				transform: scale(-1,1);
+			" />
+			<div style="
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 140px;
+				height: 140px;
+				border: 2px solid rgb(0, 119, 255);
+				border-radius: 50%;
+			"			
+			></div>
+		</div>	
+		<p id="info" style="
+			display: none;
+			position: absolute;
+			left: 64px;
+			top: 96px;
+			background-color: black;
+			color: white;
+			font-size: 20pt;
+			padding: 20px;
+		"></p> -->
+	</div>
+	<!-- <script>
+		const scriptStart = document.createElement('script');
+		const canvas = document.getElementById('canvas');
+		const paramVersion = Math.random() * 1000;
+		scriptStart.setAttribute('src', `./start.js?v${paramVersion}`);
+		canvas.after(scriptStart);
+	</script> -->
+	<div class="start-menu">
+		<div class="btn-wrapper">
+			<button class="start-menu-btn" onclick="level1()">Уровень 1</button>
+			<button class="start-menu-btn" onclick="level2()">Уровень 2</button>
+			<button class="start-menu-btn" onclick="level3()">Уровень 3</button>
+		</div>
+	</div>
+	<script src="./script/start.js"></script>
+
+	<!-- <script>
+		const script1 = document.createElement('script');
+		const script2 = document.createElement('script');
+		const script3 = document.createElement('script');
+		script1.setAttribute('src', `./script1.js?v${paramVersion}`);
+		script2.setAttribute('src', `./script2.js?v${paramVersion}`);
+		script3.setAttribute('src', `./script3.js?v${paramVersion}`);
+		document.body.append(script1);
+		document.body.append(script2);
+		document.body.append(script3);
+	</script> -->
+	<script src="./script/script2.js"></script>
+	<script src="./script/script1.js"></script>
+	<script src="./script/script3.js"></script>
+
+</body>
+</html>
