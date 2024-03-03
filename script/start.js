@@ -131,7 +131,7 @@ const start = () => {
             historyCleanBtn.className = 'modal-window-links';
             historyCleanBtn.textContent = 'Очистить историю рекордов';
             historyCleanBtn.addEventListener('click', () => {
-                localStorage.clear();
+                localStorage.removeItem('gameRecords');
                 location.reload();
             });
             modalResult.append(historyCleanBtn);
